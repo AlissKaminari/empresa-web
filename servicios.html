@@ -2,41 +2,68 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Menú</title>
+    <title>Menú - Café Aroma</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Menú ☕</h1>
-    <nav>
+<header class="header-principal">
+    <h1 class="titulo-pagina">Menú <span class="icono-titulo">☕</span></h1>
+    <nav class="navegacion-principal">
         <a href="index.html">Inicio</a>
-        <a href="servicios.html">Menú</a>
+        <a href="servicios.html" class="activo">Menú</a>
         <a href="control.html">Pedidos</a>
         <a href="nosotros.html">Nosotros</a>
     </nav>
 </header>
 
-<section>
-    <h2>Nuestras bebidas</h2>
-    <ul>
-        <li>☕ Café Americano</li>
-        <li>🥛 Latte</li>
-        <li>🍫 Chocolate caliente</li>
-        <li>🧊 Café frío</li>
-    </ul>
+<main class="contenedor-menu">
+    
+    <section class="categoria-menu">
+        <h2 class="titulo-categoria">Nuestras bebidas</h2>
+        <ul class="lista-productos">
+            <li class="producto">
+                <span class="icono">☕</span> 
+                <span class="nombre-producto">Café Americano</span>
+            </li>
+            <li class="producto">
+                <span class="icono">🥛</span> 
+                <span class="nombre-producto">Latte</span>
+            </li>
+            <li class="producto">
+                <span class="icono">🍫</span> 
+                <span class="nombre-producto">Chocolate caliente</span>
+            </li>
+            <li class="producto">
+                <span class="icono">🧊</span> 
+                <span class="nombre-producto">Café frío</span>
+            </li>
+        </ul>
+    </section>
 
-    <h2>Postres</h2>
-    <ul>
-        <li>🍰 Pastel de chocolate</li>
-        <li>🥐 Croissant</li>
-        <li>🍪 Galletas</li>
-    </ul>
-</section>
+    <section class="categoria-menu">
+        <h2 class="titulo-categoria">Postres</h2>
+        <ul class="lista-productos">
+            <li class="producto">
+                <span class="icono">🍰</span> 
+                <span class="nombre-producto">Pastel de chocolate</span>
+            </li>
+            <li class="producto">
+                <span class="icono">🥐</span> 
+                <span class="nombre-producto">Croissant</span>
+            </li>
+            <li class="producto">
+                <span class="icono">🍪</span> 
+                <span class="nombre-producto">Galletas</span>
+            </li>
+        </ul>
+    </section>
 
-<footer>
+</main>
+
+<footer class="footer-principal">
     <p>© 2026 Café Aroma</p>
 </footer>
 
 </body>
-</html>
+</html> 

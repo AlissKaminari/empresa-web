@@ -2,38 +2,54 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Pedidos</title>
+    <title>Pedidos - Café Aroma</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Realizar Pedido 🧾</h1>
-    <nav>
+<header class="header-principal">
+    <h1 class="titulo-pagina">Realizar Pedido <span class="icono-titulo">🧾</span></h1>
+    <nav class="navegacion-principal">
         <a href="index.html">Inicio</a>
         <a href="servicios.html">Menú</a>
-        <a href="control.html">Pedidos</a>
+        <a href="control.html" class="activo">Pedidos</a>
         <a href="nosotros.html">Nosotros</a>
     </nav>
 </header>
 
-<section>
-    <h2>Haz tu pedido</h2>
-    <form>
-        <label>Nombre:</label>
-        <input type="text" placeholder="Tu nombre">
+<main class="contenedor-principal">
+    
+    <section class="seccion-pedido">
+        
+        <div class="columna-texto">
+            <h2 class="titulo-seccion">Haz tu pedido</h2>
+        </div>
 
-        <label>Producto:</label>
-        <input type="text" placeholder="Ej. Latte">
+        <form action="#" method="POST" class="formulario-pedido">
+            
+            <div class="grupo-formulario">
+                <label for="nombre-cliente" class="etiqueta-formulario">Nombre:</label>
+                <input type="text" id="nombre-cliente" name="nombre" class="campo-formulario" placeholder="Tu nombre" required>
+            </div>
 
-        <label>Cantidad:</label>
-        <input type="number" min="1">
+            <div class="grupo-formulario">
+                <label for="producto-pedido" class="etiqueta-formulario">Producto:</label>
+                <input type="text" id="producto-pedido" name="producto" class="campo-formulario" placeholder="Ej. Latte" required>
+            </div>
 
-        <button type="submit">Enviar Pedido</button>
-    </form>
-</section>
+            <div class="grupo-formulario">
+                <label for="cantidad-pedido" class="etiqueta-formulario">Cantidad:</label>
+                <input type="number" id="cantidad-pedido" name="cantidad" class="campo-formulario" min="1" required>
+            </div>
 
-<footer>
+            <button type="submit" class="boton-enviar">Enviar Pedido</button>
+            
+        </form>
+    </section>
+
+</main>
+
+<footer class="footer-principal">
     <p>© 2026 Café Aroma</p>
 </footer>
 
