@@ -4,6 +4,11 @@
         En Café Aroma buscamos brindar la mejor experiencia con café de calidad 
         y un ambiente cómodo donde puedas disfrutar cada momento.
     </p>
+    <button onclick="mostrarMas()">Leer más</button>
+    <p id="extra" style="display:none;">
+        Desde nuestros inicios, hemos trabajado con productores locales para 
+        garantizar la frescura y el mejor sabor en cada taza.
+    </p>
 </section>
 
 <section>
@@ -27,4 +32,20 @@
         Crear experiencias únicas a través del café, combinando sabor, aroma 
         y un ambiente que haga sentir a cada cliente como en casa.
     </p>
+
+    <h2>Contador de visitantes</h2>
+    <p>Personas que han visto esta página: <span id="contador">0</span></p>
 </section>
+
+<script>
+function mostrarMas() {
+    const extra = document.getElementById("extra");
+    extra.style.display = extra.style.display === "none" ? "block" : "none";
+}
+
+// contador simple con localStorage
+let visitas = localStorage.getItem("visitas") || 0;
+visitas++;
+localStorage.setItem("visitas", visitas);
+document.getElementById("contador").innerText = visitas;
+</script>
