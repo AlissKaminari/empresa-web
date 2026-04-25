@@ -2,63 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Menú - Café Aroma</title>
+    <title>Servicios - EVE COFFEE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="header-principal">
-    <h1 class="titulo-pagina">Menú <span class="icono-titulo">☕</span></h1>
+    <h1 class="titulo-empresa">EVE COFFEE</h1>
     <nav class="navegacion-principal">
         <a href="index.html">Inicio</a>
-        <a href="servicios.html" class="activo">Menú</a>
-        <a href="control.html">Pedidos</a>
+        <a href="servicios.html" class="activo">Servicios</a>
+        <a href="control.html">Control</a>
         <a href="nosotros.html">Nosotros</a>
     </nav>
 </header>
 
-<main class="contenedor-menu">
+<main class="contenedor-servicios">
+    <h2 class="subtitulo-seccion">Nuestros Servicios</h2>
     
-    <section class="categoria-menu">
-        <h2 class="titulo-categoria">Nuestras bebidas</h2>
-        <ul class="lista-productos">
-            <li class="producto">
-                <span class="icono">☕</span> 
-                <span class="nombre-producto">Café Americano</span>
-            </li>
-            <li class="producto">
-                <span class="icono">🥛</span> 
-                <span class="nombre-producto">Latte</span>
-            </li>
-            <li class="producto">
-                <span class="icono">🍫</span> 
-                <span class="nombre-producto">Chocolate caliente</span>
-            </li>
-            <li class="producto">
-                <span class="icono">🧊</span> 
-                <span class="nombre-producto">Café frío</span>
-            </li>
-        </ul>
-    </section>
+    <div class="grid-servicios">
+        <article class="tarjeta-cafe">
+            <span class="icono-cafe">☕</span>
+            <h3>Barra de Café</h3>
+            <p>Disfruta de la mejor selección de granos preparados por baristas expertos.</p>
+        </article>
 
-    <section class="categoria-menu">
-        <h2 class="titulo-categoria">Postres</h2>
-        <ul class="lista-productos">
-            <li class="producto">
-                <span class="icono">🍰</span> 
-                <span class="nombre-producto">Pastel de chocolate</span>
-            </li>
-            <li class="producto">
-                <span class="icono">🥐</span> 
-                <span class="nombre-producto">Croissant</span>
-            </li>
-            <li class="producto">
-                <span class="icono">🍪</span> 
-                <span class="nombre-producto">Galletas</span>
-            </li>
-        </ul>
-    </section>
+        <article class="tarjeta-cafe">
+            <span class="icono-cafe">🥐</span>
+            <h3>Repostería</h3>
+            <p>Acompaña tu bebida con pan artesanal horneado cada mañana.</p>
+        </article>
 
+        <article class="tarjeta-cafe">
+            <span class="icono-cafe">🛵</span>
+            <h3>Servicio a Domicilio</h3>
+            <p>Llevamos el sabor de EVE COFFEE hasta la puerta de tu casa u oficina.</p>
+        </article>
+    </div>
 </main>
 
 <footer class="footer-principal">
@@ -66,4 +46,4 @@
 </footer>
 
 </body>
-</html> 
+</html>
