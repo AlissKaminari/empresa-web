@@ -131,3 +131,94 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Colores basados en la imagen del líder */
+:root {
+    --cafe-oscuro: #5d4037;
+    --cafe-medio: #795548;
+    --beige-fondo: #c19a6b; /* El tono de fondo de tu imagen */
+    --blanco-crema: #f5f5f5;
+}
+
+body {
+    background-color: var(--beige-fondo);
+    font-family: 'Times New Roman', Times, serif; /* Fuente similar a la de la imagen */
+    margin: 0;
+    color: #2e1a12;
+}
+
+/* Encabezado igual al del líder */
+.header-principal {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-empresa {
+    font-size: 2.5rem;
+    color: #3e2723;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navegacion-principal {
+    background-color: var(--cafe-oscuro);
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 50px; /* Bordes muy redondeados como la imagen */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.navegacion-principal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navegacion-principal a.activo {
+    text-decoration: underline;
+}
+
+/* Diseño de tus servicios */
+.contenedor-servicios {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tarjeta-cafe {
+    background-color: rgba(93, 64, 55, 0.1); /* Café muy transparente */
+    border: 2px solid var(--cafe-oscuro);
+    padding: 30px;
+    width: 250px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-cafe:hover {
+    background-color: var(--cafe-oscuro);
+    color: white;
+}
+
+.icono-cafe {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-principal {
+    background-color: var(--cafe-oscuro);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
