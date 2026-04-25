@@ -2,54 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Pedidos - Café Aroma</title>
+    <title>Pedidos - EVE COFFEE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="header-principal">
-    <h1 class="titulo-pagina">Realizar Pedido <span class="icono-titulo">🧾</span></h1>
-    <nav class="navegacion-principal">
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Menú</a>
-        <a href="control.html" class="activo">Pedidos</a>
-        <a href="nosotros.html">Nosotros</a>
+<header class="header">
+    <h1 class="eve">EVE COFFEE</h1>
+    <nav class="navbar">
+        <a href="index.html" class="navLink">Inicio</a>
+        <a href="servicios.html" class="navLink">Servicios</a>
+        <a href="control.html" class="navLink" style="text-decoration: underline;">Control</a>
+        <a href="nosotros.html" class="navLink">Nosotros</a>
     </nav>
 </header>
 
-<main class="contenedor-principal">
+<section>
     
-    <section class="seccion-pedido">
+    <div style="text-align: center;">
         
-        <div class="columna-texto">
-            <h2 class="titulo-seccion">Haz tu pedido</h2>
-        </div>
-
-        <form action="#" method="POST" class="formulario-pedido">
+        <h2 class="eve" style="font-size: 35px; margin-bottom: 20px;">Haz tu pedido</h2>
+        
+        <form action="#" method="POST">
             
-            <div class="grupo-formulario">
-                <label for="nombre-cliente" class="etiqueta-formulario">Nombre:</label>
-                <input type="text" id="nombre-cliente" name="nombre" class="campo-formulario" placeholder="Tu nombre" required>
-            </div>
+            <label style="font-size: 18px; text-align: left;">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
 
-            <div class="grupo-formulario">
-                <label for="producto-pedido" class="etiqueta-formulario">Producto:</label>
-                <input type="text" id="producto-pedido" name="producto" class="campo-formulario" placeholder="Ej. Latte" required>
-            </div>
+            <label style="font-size: 18px; text-align: left;">Producto:</label>
+            <select name="producto" required style="margin: 10px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <option value="" disabled selected>Elige un producto</option>
+                <option value="americano">Café Americano</option>
+                <option value="latte">Latte</option>
+                <option value="croissant">Croissant</option>
+            </select>
 
-            <div class="grupo-formulario">
-                <label for="cantidad-pedido" class="etiqueta-formulario">Cantidad:</label>
-                <input type="number" id="cantidad-pedido" name="cantidad" class="campo-formulario" min="1" required>
-            </div>
+            <label style="font-size: 18px; text-align: left;">Cantidad:</label>
+            <input type="number" name="cantidad" min="1" required>
 
-            <button type="submit" class="boton-enviar">Enviar Pedido</button>
+            <button type="submit">Enviar Pedido</button>
             
         </form>
-    </section>
+    </div>
 
-</main>
+</section>
 
-<footer class="footer-principal">
+<footer>
     <p>© 2026 Café Aroma</p>
 </footer>
 
